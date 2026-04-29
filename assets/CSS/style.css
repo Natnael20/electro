@@ -7,7 +7,8 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    height: 100%;
+    font-weight: 400;
+    color: #333;
 }
 
 :root {
@@ -26,7 +27,7 @@ a::before {
     width: 100%;
     height: 4px;
     border-radius: 4px;
-    background-color: #18272F;
+    background-color: var(--primary);
     bottom: 0;
     left: 0;
     transform-origin: left;
@@ -36,4 +37,73 @@ a::before {
 
 a:hover::before {
     transform: scaleX(1);
+}
+
+.top-content  {
+    background: #1E1F29;
+}
+
+.lower-section {
+    background: #15161D;
+    border-bottom: 4px solid var(--primary);
+}
+
+.top-content i {
+    color: var(--primary);
+}
+
+.top-content a {
+    font-size: .85rem;
+}
+
+.top-content a::before, .logo a::before {
+    display: none;
+}
+
+.search-form button, .search-form button:hover {
+    background-color: var(--primary);
+}
+
+nav {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.nav-link {
+    font-size: .8rem;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.overlay a:first-of-type {
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: .8rem;
+    transition: 0.3s;
+    margin-top: 5%;
 }

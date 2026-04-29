@@ -10,7 +10,148 @@
     <title>Electro</title>
 </head>
 <body>
-    
+    <div class="container-fluid top-content">
+        <div class="container p-2 d-flex justify-content-between align-items-center flex-wrap">
+            <div class="left-content d-flex align-items-center flex-wrap gap-3">
+                <div class="phone">
+                    <a href="tel:+1234567890"
+                        class="d-flex align-items-center gap-2 text-decoration-none text-light position-static">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+1 234 567 890</span>
+                    </a>
+                </div>
+                <div class="email">
+                    <a href="mailto:info@electro.com"
+                        class="d-flex align-items-center gap-2 text-decoration-none text-light position-static">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span> email@email.com</span>
+                    </a>
+                </div>
+                <div class="location">
+                    <a class="d-flex align-items-center gap-2 text-decoration-none text-light position-static"
+                        href="https://www.google.com/maps/place/1734+Stonecoal+Road,+City,+Country" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-map-marker-alt"></i>
+                        <span>1734 Stonecoal Road</span>
+                    </a>
+                </div>
+            </div>
+            <div class="right-content d-flex align-items-center flex-wrap gap-3">
+                <div class="currency">
+                    <a href="#" class="d-flex align-items-center gap-2 text-decoration-none text-light position-static">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <span>USD</span>
+                    </a>
+                </div>
+                <div class="account">
+                    <a href="#" class="d-flex align-items-center gap-2 text-decoration-none text-light position-static">
+                        <i class="fa-solid fa-user"></i>
+                        <span>My Account</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid lower-section p-4">
+        <div class="container">
+            <div class="row d-flex justify-content-between align-items-center text-center flex-wrap gap-3">
+                <div class="col-12 col-sm-2 logo flex-shrink-0">
+                    <a href="#" class="text-decoration-none text-light">
+                        <h1>Electro<strong class="text-danger">.</strong></h1>
+                    </a>
+                </div>
+                
+                <div class="col-12 col-sm-2 search-form flex-grow-1 px-4" style="max-width: auto;">
+                    <div class="d-flex align-items-stretch align-items-md-center border rounded-3 rounded-md-pill overflow-hidden bg-white shadow-sm">
+                        
+                        <select class="form-select border-0 bg-light rounded-0 category-select" title="Product Categories">
+                            <option selected>All Categories</option>
+                            <option value="1">Category 1</option>
+                            <option value="2">Category 2</option>
+                            <option value="3">Category 3</option>
+                        </select>
+                        
+                        <input type="text" class="form-control border-0 rounded-0" placeholder="Search for products..." style="flex: 1;">
+                        
+                        <button class="btn text-light rounded-0 rounded-md-end" type="submit">
+                            search
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-sm-2 lower-right d-flex justify-content-end gap-4 mt-4 mt-sm-0">
+                    <a href="#" class="text-decoration-none text-light text-center position-relative">
+                        <i class="fa-solid fa-heart"></i>
+                        <span class="position-absolute top-0 start-75 translate-middle badge rounded-pill bg-danger">
+                            1
+                        </span>
+                        <span class="d-block mt-1" style="font-size: .8rem;">Wishlist</span>
+                    </a>
+                
+                    <a href="#" class="text-decoration-none text-light text-center position-relative">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            1
+                        </span>
+                        <span class="d-block mt-1" style="font-size: .8rem;">Cart</span>
+                    </a>
+
+                    <div class="mobile-nav d-flex d-sm-none">
+                        <!-- Using Font Awesome -->
+                        <button id="hamburgerMenu" class="text-light bg-dark border-0 fs-5 d-grid" style="cursor: pointer;">
+                            <i class="fas fa-bars"></i>
+                            <span style="font-size:.8rem;" class="mt-2">menu</span>
+                        </button>
+                        
+                        <div class="d-lg-none mt-3">
+                            <!-- mobile version of navgiation -->
+                            <div id="myNav" class="overlay">
+                            
+                            
+                                <div class="overlay-content">
+                                    <a href="#" class="mobile-navlink">Hot Deals</a>
+                                    <a href="#">Categories</a>
+                                    <a href="#">Laptops</a>
+                                    <a href="#">Smartphones</a>
+                                    <a href="#">Cameras</a>
+                                    <a href="#">Accessories</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg d-none d-sm-flex">
+        <div class="container">
+            <div class="navbar-items">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hot Deals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Laptops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Smartphones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accessories</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <script src="assets/js/script.js"></script>
 </body>
