@@ -107,3 +107,40 @@ nav {
     transition: 0.3s;
     margin-top: 5%;
 }
+
+.collections {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.laptop-collection {
+    background-image: url("https://preview.colorlib.com/theme/electro/img/shop01.png");
+}
+
+.headphone-collection {
+    background-image: url("https://preview.colorlib.com/theme/electro/img/shop03.png");
+}
+
+.camera-collection {
+    background-image: url("https://preview.colorlib.com/theme/electro/img/shop03.png");
+}
+
+.top-products::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    transform: skewX(-50deg) translateX(-60%);
+    z-index: -1;
+}
+
+
+
+
