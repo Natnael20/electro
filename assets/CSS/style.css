@@ -416,3 +416,7 @@ nav {
     opacity: .2;
     transform: rotate(20deg);
 }
+
+.footer-container {
+    background-color: #15161D;
+}
