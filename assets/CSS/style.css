@@ -396,3 +396,23 @@ nav {
     font-weight: bolder;
     font-size: .9rem;
 }
+
+.news-container {
+    border-top: 2px solid #E4E7ED;
+    border-bottom: 3px solid #D10024;
+    padding: 30px 30px;
+}
+
+.letter-icon {
+    position: relative;
+}
+
+.letter-icon > i {
+    z-index: -1;
+    position: absolute;
+    left: 25%;
+    top: 20px;
+    font-size: 10em;
+    opacity: .2;
+    transform: rotate(20deg);
+}
