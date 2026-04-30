@@ -154,6 +154,8 @@ nav {
     height: 100vh;
 }
 
+
+
 @media (max-width: 768px) {
     .product-container {
         height: 150vh;
@@ -174,6 +176,45 @@ nav {
     padding: 20px;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch; /* Smooth touch scrolling */
+}
+
+.product-slider {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    gap: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.product-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.card-slide {
+    flex: 0 0 auto;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Optional: Add hover effect */
+.card-slide:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-slider {
+        gap: 15px;
+    }
+    
+    .card-slide {
+        margin-right: 15px;
+    }
 }
 
 /* Hide scrollbar completely */
@@ -296,6 +337,7 @@ nav {
     background-color: #fff;
     color: var(--primary);
     font-weight: bold;
+    border: 2px solid var(--primary);
 }
 
 
