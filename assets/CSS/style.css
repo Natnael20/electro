@@ -420,3 +420,15 @@ nav {
 .footer-container {
     background-color: #15161D;
 }
+
+.footer-container a {
+    font-size: .9rem;
+}
+
+.final-footer {
+    z-index: 2;
+}
+
+.payment-methods i {
+    opacity: .1;
+}
